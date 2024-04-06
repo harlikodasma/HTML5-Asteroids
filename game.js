@@ -435,7 +435,7 @@ Ship = function () {
     }
   };
 
-  this.collision = function (other) {
+  /*this.collision = function (other) {
     SFX.explosion();
     Game.explosionAt(other.x, other.y);
     Game.FSM.state = 'player_died';
@@ -443,7 +443,7 @@ Ship = function () {
     this.currentNode.leave(this);
     this.currentNode = null;
     Game.lives--;
-  };
+  };*/
 
 };
 Ship.prototype = new Sprite();
